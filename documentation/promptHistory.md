@@ -72,3 +72,49 @@ sobe no meu github criei um repo so pra isso
 [siteprofissional1/saudesync](https://github.com/siteprofissional1/saudesync)
 ```
 
+### Prompt 7 — Integração Contínua com Vercel (Auto-deploy ao atualizar no GitHub)
+```markdown
+subi no vercel tbm, faz uma forma q sempre q eu att no github ja atualize no vercel [Skip to content](https://vercel.com/estudanteam/saudesync#geist-skip-nav)
+FindF
+[Overview](https://vercel.com/estudanteam/saudesync)[Deployments](https://vercel.com/estudanteam/saudesync/deployments)[Logs](https://vercel.com/estudanteam/saudesync/logs)[Analytics](https://vercel.com/estudanteam/saudesync/analytics)[Speed Insights](https://vercel.com/estudanteam/saudesync/speed-insights)[Observability](https://vercel.com/estudanteam/saudesync/observability)[Firewall](https://vercel.com/estudanteam/saudesync/firewall)[CDN](https://vercel.com/estudanteam/saudesync/cdn)[Environment Variables](https://vercel.com/estudanteam/saudesync/settings/environment-variables)[Domains](https://vercel.com/estudanteam/saudesync/settings/domains)[Connect](https://vercel.com/estudanteam/saudesync/connect)[Integrations](https://vercel.com/estudanteam/saudesync/settings/integrations)[Storage](https://vercel.com/estudanteam/saudesync/stores)[Flags](https://vercel.com/estudanteam/saudesync/flags)[Agent](https://vercel.com/estudanteam/saudesync/agent)[AI Gateway](https://vercel.com/estudanteam/saudesync/ai-gateway)[Sandboxes](https://vercel.com/estudanteam/saudesync/sandboxes)[Workflows](https://vercel.com/estudanteam/saudesync/workflows)[Images](https://vercel.com/estudanteam/saudesync/images)[Daemons](https://vercel.com/estudanteam/saudesync/daemons)[Usage](https://vercel.com/estudanteam/saudesync/usage)[Support](https://vercel.com/estudanteam/saudesync/support)[Settings](https://vercel.com/estudanteam/saudesync/settings)
+estudantebrasileiro777-3619
+Overview
+Production Deployment
+Deployment
+[saudesync-pe9phhxrs-estudanteam.vercel.app](https://vercel.com/estudanteam/saudesync/5cYrQhimE3dy7f4CYCvC54Fa1psH)
+Domains
+[saudesync-mu.vercel.app](https://saudesync-mu.vercel.app/)
+Status
+Ready
+Created
+1m ago by estudantebrasileiro777-3619
+Source
+[main](https://github.com/siteprofissional1/saudesync/tree/main)
+[2571eecfeat: complete release of Saude Sync for SENAI Ourinhos Hackathon Anti…](https://github.com/siteprofissional1/saudesync/commit/2571eecdd52a7e966b35faa419a7d4b870115d73)
+Deployment Settings3 Recommendations
+To update your Production Deployment, push to the main branch.
+Production Checklist
+1/5
+Connect Git Repository
+Add Custom Domain
+Preview Deployment
+Enable Web Analytics
+Upgrade to Speed Insights Plus
+Observability
+6h
+CDN Requests
+7
+Function Invocations
+0
+Error Rate
+0%
+Analytics
+Track Visitors and Page Views
+See real-time traffic, top pages, and audience trends.
+Active Branches
+No Active Branches
+Commit using our Git connections.
+Deployments
+```
+
+

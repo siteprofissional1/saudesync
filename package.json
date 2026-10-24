@@ -1,4 +1,13 @@
 {
+  "name": "saudesync",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Saúde Sync — Triagem Inteligente e Gestão de Atendimento em Saúde",
+  "scripts": {
+    "build": "npm --prefix frontend run build",
+    "dev": "npm --prefix frontend run dev",
+    "install:all": "npm --prefix frontend install"
+  },
   "dependencies": {
     "firebase": "^13.1.0"
   }
