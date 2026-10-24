@@ -1,0 +1,32 @@
+# Arquivos de ambiente e credenciais
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+service-account*.json
+firebase-adminsdk*.json
+
+# Dependências
+node_modules/
+**/node_modules/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Diretórios temporários e de compilação
+.tmp/
+dist/
+**/dist/
+build/
+.coverage
+htmlcov/
+
+# Logs e arquivos de sistema
+*.log
+.DS_Store
+Thumbs.db

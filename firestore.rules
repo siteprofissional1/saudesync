@@ -1,0 +1,29 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Fila de Atendimento: Leitura pública para telas e painéis; escrita permitida em modo demonstrativo
+    match /fila_atendimento/{document=**} {
+      allow read: if true;
+      allow create, update: if request.resource.data.senha_painel is string;
+      allow delete: if request.auth != null;
+    }
+
+    // Dados Externos de Saúde (Cache de Scraping): Leitura pública, escrita autenticada ou via backend
+    match /dados_externos/{document=**} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // Insights de Inteligência Artificial: Leitura pública, escrita controlada
+    match /ai_insights/{document=**} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // Métricas de Sistema e Telemetria
+    match /system_metrics/{document=**} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+  }
+}

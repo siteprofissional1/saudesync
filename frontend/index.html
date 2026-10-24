@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Saúde Sync — Triagem Inteligente e Gestão de Atendimento em Saúde</title>
+  <meta name="description" content="Central inteligente de gestão de triagem, filas em tempo real e analytics de atendimento em saúde. Hackathon Antigravity — SENAI Ourinhos." />
+  <meta name="theme-color" content="#07111F" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+
+  <!-- Google Fonts: Inter e Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Plotly.js para Visualizações de Dados -->
+  <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+
+  <!-- Estilos Globais -->
+  <link rel="stylesheet" href="./src/styles/variables.css" />
+  <link rel="stylesheet" href="./src/styles/base.css" />
+  <link rel="stylesheet" href="./src/styles/layout.css" />
+  <link rel="stylesheet" href="./src/styles/components.css" />
+  <link rel="stylesheet" href="./src/styles/pages.css" />
+</head>
+<body>
+  <div id="app-shell" class="app-shell">
+    <!-- Overlay para dispositivos móveis ao abrir sidebar -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+    <!-- Barra de Navegação Lateral -->
+    <aside id="app-sidebar" class="app-sidebar" aria-label="Navegação Principal"></aside>
+
+    <!-- Área de Conteúdo Principal -->
+    <div class="app-main-container">
+      <!-- Cabeçalho Superior -->
+      <header id="app-header" class="app-header"></header>
+
+      <!-- Banner Persistente de Caráter Acadêmico e Ético -->
+      <div class="academic-disclaimer-banner" role="alert">
+        <span class="banner-icon">ℹ️</span>
+        <span class="banner-text">
+          <strong>Aviso Normativo:</strong> Projeto acadêmico e demonstrativo (Hackathon Antigravity SENAI). 
+          Utiliza dados simulados e não substitui avaliação, diagnóstico ou decisão clínica realizada por profissionais de saúde.
+        </span>
+      </div>
+
+      <!-- Área de Visualização Dinâmica de Páginas -->
+      <main id="app-content" class="app-content" role="main"></main>
+
+      <!-- Rodapé Oficial Obrigatório -->
+      <footer class="app-footer">
+        <div class="footer-content">
+          <span>Desenvolvido por <a href="https://siteprofissional.pro" target="_blank" rel="noopener noreferrer" class="credit-link">siteprofissional</a></span>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Container de Notificações Toast -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Ponto de Entrada JavaScript -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

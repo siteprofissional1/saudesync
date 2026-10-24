@@ -1,0 +1,599 @@
+/* ============================================================
+   SAÚDE SYNC — ESTILOS ESPECÍFICOS DE PÁGINAS
+   ============================================================ */
+
+/* --- CHARTS GRID (DASHBOARD) --- */
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.chart-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-card.full-width {
+  grid-column: 1 / -1;
+}
+
+.chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.chart-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.chart-container {
+  min-height: 320px;
+  width: 100%;
+}
+
+/* --- TRIAGEM SIMULADA --- */
+.triage-container {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.triage-form-card, .triage-result-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  box-shadow: var(--card-shadow);
+}
+
+.quick-scenario-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.vitals-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.triage-result-header {
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border: 2px solid transparent;
+}
+
+.triage-result-class {
+  font-family: var(--font-family-heading);
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-top: 0.5rem;
+}
+
+.similar-cases-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.similar-case-card {
+  background-color: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+.similar-case-card .case-tag {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+/* --- DADOS VIVOS (OURINHOS HEALTH) --- */
+.facility-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.facility-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.facility-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.facility-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* --- INSIGHTS IA (MULTI-AGENTES) --- */
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 1.5rem;
+}
+
+.insight-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  border-left: 4px solid var(--brand-accent);
+}
+
+.insight-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--brand-accent);
+  letter-spacing: 0.04em;
+}
+
+.insight-metrics {
+  background-color: var(--bg-surface-elevated);
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* --- SOBRE O PROJETO (OS 9 PILARES) --- */
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.pillar-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pillar-number {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--brand-primary);
+  background-color: var(--brand-glow);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  width: fit-content;
+}
+
+/* --- PAINEL TV DA SALA DE ESPERA (TELÃO FULLSCREEN) --- */
+.tv-dashboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-height: calc(100vh - 180px);
+}
+
+.tv-header {
+  background: linear-gradient(135deg, rgba(7, 17, 31, 0.98) 0%, rgba(13, 27, 42, 0.98) 100%);
+  border: 1px solid var(--border-focused);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="light"] .tv-header {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F0F9FF 100%);
+  border-color: #0284C7;
+  box-shadow: 0 8px 24px rgba(2, 132, 199, 0.12);
+}
+
+.tv-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tv-logo-icon {
+  font-size: 2.5rem;
+}
+
+.tv-hospital-title {
+  font-family: var(--font-family-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.tv-hospital-subtitle {
+  font-size: 0.85rem;
+  color: var(--brand-accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tv-header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.tv-clock-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.tv-clock-digits {
+  font-family: var(--font-family-heading);
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--brand-accent);
+  letter-spacing: 0.08em;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.tv-date-text {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  text-transform: capitalize;
+  margin-top: 0.25rem;
+}
+
+/* Grade Principal */
+.tv-main-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 1.75rem;
+  flex: 1;
+  align-items: stretch;
+}
+
+/* Card Hero da Senha Chamada */
+.tv-hero-call-card {
+  background: linear-gradient(135deg, rgba(7, 17, 31, 0.95) 0%, rgba(13, 27, 42, 0.95) 100%);
+  border: 3px solid var(--brand-accent);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 210, 255, 0.2), inset 0 0 30px rgba(0, 210, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme="light"] .tv-hero-call-card {
+  background: linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%);
+  border-color: #0284C7;
+  box-shadow: 0 15px 40px rgba(2, 132, 199, 0.18);
+}
+
+.tv-hero-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.tv-pulse-beacon {
+  width: 14px;
+  height: 14px;
+  background-color: var(--manchester-vermelho);
+  border-radius: 50%;
+  animation: beacon-pulse 1.5s infinite;
+}
+
+@keyframes beacon-pulse {
+  0% { transform: scale(0.9); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+  50% { transform: scale(1.2); box-shadow: 0 0 0 12px rgba(239, 68, 68, 0); }
+  100% { transform: scale(0.9); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+
+.tv-hero-title-tag {
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--brand-accent);
+  text-transform: uppercase;
+}
+
+.tv-hero-ticket-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 1.5rem;
+  padding: 1rem 3rem;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: var(--radius-xl);
+  border: 2px solid rgba(0, 210, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.tv-hero-ticket-display.pulse-glow {
+  animation: ticket-flash 2.5s infinite;
+}
+
+@keyframes ticket-flash {
+  0% { transform: scale(1); border-color: var(--brand-accent); box-shadow: 0 0 35px rgba(0, 210, 255, 0.5); }
+  50% { transform: scale(1.03); border-color: #FFFFFF; box-shadow: 0 0 60px rgba(0, 210, 255, 0.85); }
+  100% { transform: scale(1); border-color: var(--brand-accent); box-shadow: 0 0 35px rgba(0, 210, 255, 0.5); }
+}
+
+.tv-ticket-prefix {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.tv-ticket-number {
+  font-family: var(--font-family-heading);
+  font-size: 6rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-shadow: 0 0 25px rgba(0, 210, 255, 0.8);
+}
+
+[data-theme="light"] .tv-ticket-number {
+  color: #0369A1;
+  text-shadow: none;
+}
+
+.tv-hero-badge-container {
+  margin-bottom: 2rem;
+}
+
+.tv-hero-location-box {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 2rem;
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tv-location-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.tv-loc-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.tv-loc-value {
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  font-weight: 800;
+}
+
+.tv-hero-footer-note {
+  margin-top: 1.5rem;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+/* Painel Lateral da TV */
+.tv-side-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tv-side-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.tv-side-card-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 0.75rem;
+}
+
+.tv-history-list, .tv-waiting-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  overflow-y: auto;
+}
+
+.tv-history-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 1rem;
+  background-color: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+}
+
+.tv-hist-ticket {
+  font-family: var(--font-family-heading);
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.tv-hist-meta {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+}
+
+.tv-waiting-row {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.65rem 1rem;
+  background-color: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+}
+
+.tv-wait-pos {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.tv-wait-ticket {
+  font-family: var(--font-family-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  min-width: 75px;
+}
+
+.tv-wait-time {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* Barra Inferior de Avisos (Ticker / Marquee) */
+.tv-ticker-bar {
+  background: #030A14;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  overflow: hidden;
+}
+
+[data-theme="light"] .tv-ticker-bar {
+  background: #F1F5F9;
+}
+
+.tv-ticker-tag {
+  background-color: var(--manchester-vermelho);
+  color: #FFFFFF;
+  padding: 0.3rem 0.65rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.tv-ticker-content {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  animation: ticker-slide 30s linear infinite;
+}
+
+@keyframes ticker-slide {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+
+/* Responsividade de páginas */
+@media (max-width: 1024px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .triage-container {
+    grid-template-columns: 1fr;
+  }
+
+  .tv-main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tv-ticket-number {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .tv-ticket-number {
+    font-size: 3.2rem;
+  }
+
+  .tv-hero-call-card {
+    padding: 1.5rem 1rem;
+  }
+}
+

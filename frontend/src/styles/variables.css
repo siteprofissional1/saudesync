@@ -1,0 +1,78 @@
+/* ============================================================
+   SAÚDE SYNC — DESIGN TOKENS (CSS CUSTOM PROPERTIES)
+   Suporte nativo a Dark Mode e Light Mode
+   ============================================================ */
+
+:root {
+  /* Cores Globais da Marca */
+  --brand-primary: #2F80ED;
+  --brand-hover: #1E6DD8;
+  --brand-accent: #21C7D9;
+  --brand-glow: rgba(47, 128, 237, 0.2);
+
+  /* Protocolo de Manchester (Semântica Universal de Triagem) */
+  --manchester-vermelho: #EF4444;
+  --manchester-vermelho-bg: rgba(239, 68, 68, 0.15);
+  --manchester-laranja: #F97316;
+  --manchester-laranja-bg: rgba(249, 115, 22, 0.15);
+  --manchester-amarelo: #EAB308;
+  --manchester-amarelo-bg: rgba(234, 179, 8, 0.15);
+  --manchester-verde: #22C55E;
+  --manchester-verde-bg: rgba(34, 197, 94, 0.15);
+  --manchester-azul: #3B82F6;
+  --manchester-azul-bg: rgba(59, 130, 246, 0.15);
+
+  /* Tipografia */
+  --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-heading: 'Plus Jakarta Sans', 'Inter', sans-serif;
+
+  /* Espaçamento e Raios */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  --sidebar-width: 260px;
+  --header-height: 64px;
+}
+
+/* --- TEMA ESCURO (DARK MODE - DEFAULT) --- */
+:root[data-theme="dark"] {
+  --bg-canvas: #07111F;
+  --bg-surface: #0D1B2A;
+  --bg-surface-elevated: #13263A;
+  --bg-input: #0A1624;
+
+  --border-subtle: #182C3F;
+  --border-default: #223A50;
+  --border-focused: #2F80ED;
+
+  --text-primary: #F5F9FC;
+  --text-secondary: #9FB2C4;
+  --text-muted: #647B91;
+
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --banner-bg: rgba(47, 128, 237, 0.12);
+  --banner-border: rgba(47, 128, 237, 0.3);
+}
+
+/* --- TEMA CLARO (LIGHT MODE) --- */
+:root[data-theme="light"] {
+  --bg-canvas: #F4F8FB;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #F8FAFC;
+  --bg-input: #EDF2F7;
+
+  --border-subtle: #E2E8F0;
+  --border-default: #DCE7EF;
+  --border-focused: #1E6DD8;
+
+  --text-primary: #102A43;
+  --text-secondary: #486581;
+  --text-muted: #829AB1;
+
+  --card-shadow: 0 4px 16px rgba(16, 42, 67, 0.08);
+  --banner-bg: rgba(30, 109, 216, 0.08);
+  --banner-border: rgba(30, 109, 216, 0.25);
+}
