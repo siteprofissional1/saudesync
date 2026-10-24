@@ -81,3 +81,12 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      # 3. Disparo Automático para Vercel via Deploy Hook (opcional / redundante)
+      - name: Trigger Vercel Deploy Hook
+        if: env.VERCEL_DEPLOY_HOOK != ''
+        env:
+          VERCEL_DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: |
+          curl -s -X POST "$VERCEL_DEPLOY_HOOK"
+
